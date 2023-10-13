@@ -34,7 +34,7 @@ class TestControllerModule(unittest.TestCase):
 
         self.controller.start_rotation()
 
-        self.input_module.error_label.config.assert_called_with(text="Точка не принадлежит отрезку")
+        self.input_module.error_label.config.assert_called_with(text="Точка лежит вне треугольника")
         self.storage_module.set_input_values.assert_not_called()
         self.drawing_module.rotate_segment.assert_not_called()
 
