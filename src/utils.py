@@ -31,7 +31,7 @@ def get_version():
         отображается сообщение об ошибке.
 
         """
-    url = "https://api.github.com/repos/Zhukkovaa/Drawing_nested_triangles_itog/releases/latest"
+    url = "https://api.github.com/repos/Zhukkovaa/Rotation_of_the_triangle/releases/latest"
     try:
         response = requests.get(url)
         response.raise_for_status()
