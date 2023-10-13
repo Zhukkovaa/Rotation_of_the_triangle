@@ -49,7 +49,7 @@ class TkinterModule:
 
     def __init__(self):
         self.root = tk.Tk()
-        self.root.title("Вращение отрезка вокруг заданной точки с угловой скоростью")
+        self.root.title("Вращение треугольника вокруг заданной точки с угловой скоростью")
         self.window_width = 1000
         self.window_height = 600
         screen_width = self.root.winfo_screenwidth()

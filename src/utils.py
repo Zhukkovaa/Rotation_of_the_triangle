@@ -17,7 +17,7 @@ def open_about_window():
     about_window.title("О программе")
     about_text = tk.Text(about_window, height=20, width=93)
     about_text.pack()
-    with open("../data_utils/program_description.txt", "r", encoding="utf-8") as f:
+    with open("data_utils/program_description.txt", "r", encoding="utf-8") as f:
         about_text.insert(tk.END, f.read())
 
 def get_version():

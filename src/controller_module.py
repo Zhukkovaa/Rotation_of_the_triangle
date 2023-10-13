@@ -85,7 +85,7 @@ class ControllerModule:
         """
         x1, y1, x2, y2, x3, y3, speed, center_x, center_y = self.input_value()
         if not self.point_in_triangle_cross_product(x1, y1, x2, y2, x3, y3, center_x, center_y):
-            self.input_module.error_label.config(text="Точка не принадлежит отрезку")
+            self.input_module.error_label.config(text="Точка лежит вне треугольника")
             return
         self.input_module.error_label.config(text="")
         triangle = (x1, y1, x2, y2, x3, y3)
